@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tdd-python"
+version = "0.1.0"
+description = "TDD Python"
+authors = ["Prasiddha Bista"]
+readme = "README.md"
+packages = [{include = "tdd_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.28.20"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-mock = "^3.11.1"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
